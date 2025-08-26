@@ -1,0 +1,75 @@
+.about-us-container {
+  padding: 2rem;
+  color: #333;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-header .lead {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 0.5rem;
+  color: #007bff;
+}
+
+.our-story p, .why-choose-us .reason p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.why-choose-us .reasons {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.why-choose-us .reason {
+  text-align: center;
+  width: 30%;
+}
+
+.why-choose-us .reason h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.meet-the-team .team-members {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.meet-the-team .team-member {
+  text-align: center;
+}
+
+.meet-the-team .team-member img {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.meet-the-team .team-member h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}

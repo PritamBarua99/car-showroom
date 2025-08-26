@@ -1,0 +1,30 @@
+<div class="carlist-container">
+  <h1>Our Car Collection</h1>
+  <div *ngIf="cars && cars.cars.length > 0; else noCars">
+    <table>
+      <thead>
+        <tr>
+          <th>Brand</th>
+          <th>Model</th>
+          <th>Year</th>
+          <th>Color</th>
+          <th>Price</th>
+          <th>Availability</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let car of cars.cars | slice:0:20">
+          <td><a [routerLink]="['/car', car.id]">{{ car.car }}</a></td>
+          <td>{{ car.car_model }}</td>
+          <td>{{ car.car_model_year }}</td>
+          <td>{{ car.car_color }}</td>
+          <td>{{ car.price }}</td>
+          <td>{{ car.availability ? 'Available' : 'Not Available' }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ng-template #noCars>
+    <p>Loading Cars List</p>
+  </ng-template>
+</div>

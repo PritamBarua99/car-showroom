@@ -1,0 +1,26 @@
+<div class="car-detail-container" *ngIf="car">
+  
+  <div class="car-details">
+    <h1>{{ car.car_model_year }} {{ car.car }} {{ car.car_model }}</h1>
+    <div class="detail-item">
+      <span class="label">VIN:</span>
+      <span class="value">{{ car.car_vin }}</span>
+    </div>
+    <div class="detail-item">
+      <span class="label">Color:</span>
+      <span class="value">{{ car.car_color }}</span>
+    </div>
+    <div class="detail-item">
+      <span class="label">Price:</span>
+      <span class="value">{{ car.price }}</span>
+    </div>
+    <div class="detail-item">
+      <span class="label">Availability:</span>
+      <span class="value">{{ car.availability ? 'Available' : 'Not Available' }}</span>
+    </div>
+    <button class="back-button" (click)="goBack()">Back to List</button>
+  </div>
+</div>
+<div *ngIf="!car">
+  <p>Loading Car Details</p>
+</div>
